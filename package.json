@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "swc --strip-leading-paths --delete-dir-on-start -d lib src && tsc",
-    "dev": "nodemon -x tsx lib/index.js",
+    "dev": "nodemon -x tsx src/index.ts",
     "format": "pnpm prettier . --write",
     "lint": "pnpm eslint .",
     "predeploy": "pnpm lint && pnpm format && pnpm build && pnpm test",
@@ -35,5 +35,12 @@
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@langchain/community": "^0.2.25",
+    "@langchain/core": "^0.2.22",
+    "@langchain/langgraph": "^0.0.33",
+    "@langchain/openai": "^0.2.6",
+    "dotenv": "^16.4.5",
+    "duck-duck-scrape": "^2.2.5"
+  }
 }

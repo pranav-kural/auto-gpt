@@ -2,16 +2,56 @@
 
 Automated use of GPT from OpenAI API through prompts presents in a file.
 
-Takes in prompt from input JSON file and outputs the response to output JSON file.
+Takes in prompts from input JSON file and outputs the response to output JSON lines file.
+
+<details>
+<summary>How it works?</summary>
+
+**Primary Functionality:**
+
+1. Reads the input JSON file `input.json` from the `data/input` directory.
+2. Sends the prompts to the OpenAI API to get the responses.
+3. Writes the responses to the output JSON lines file `output.jsonl` in the `data/output` directory.
+
+**Under the Hood:**
+
+Following happens in the `index.ts` file:
+
+1. Imports data from `input.json` file into the `prompts` variable.
+2. Initializes an agent that will use web search tool to process prompts and generate responses (method to get the agent present in the `agent.ts` file).
+3. Uses the `processPrompts` function to process the prompts and write the responses to the output JSON lines file. Provides it with the input prompts data, the agent, and the output file path.
+</details>
+
+## Example
+
+Given below content in `input.json`:
+
+```json
+{
+  "prompts": [
+    "Who is the current president of the United States?",
+    "Who won gold in mens javelin throw event at the Paris Olympics 2024?"
+  ]
+}
+```
+
+The output JSON lines file `output.jsonl` may contain the following:
+
+```json
+{"prompt":"Who is the current president of the United States?","response":"The current president of the United States is Joe Biden. He is the 46th President of the United States. You can learn more about him on the [White House website](https://www.whitehouse.gov/administration/president-biden/).","timestamp":"2024-08-09T21:36:36.733Z"}
+{"prompt":"Who won gold in mens javelin throw event at the Paris Olympics 2024?","response":"Arshad Nadeem from Pakistan won the gold medal in the men's javelin throw event at the Paris Olympics 2024. He set a new Olympic record with a throw of 92.97 meters. This victory marked Pakistan's first Olympic gold medal in athletics.","timestamp":"2024-08-09T21:36:39.906Z"}
+```
 
 ## Getting Started
+
+Follow the below steps to run the project on your local machine.
 
 ### Clone the Repository
 
 Clone the repository to your local machine:
 
 ```bash copy
-git clone https://github.com/pranav-kural/auto-gpt
+git clone https://github.com/pranav-kural/auto-gpt.git
 ```
 
 ### Setup Environment Variables
@@ -40,18 +80,14 @@ You can update the input JSON file with your prompts.
 
 ### Output JSON File
 
-The output responses are written to the output JSON file `output.json` which is present in the `output` directory under the `data` folder.
+The output responses are written to the output JSON lines file `output.jsonl` which is present in the `output` directory under the `data` folder.
 
-The output JSON file will have the following structure:
+The output JSON lines file will have the following structure:
 
 ```json
-{
-  "responses": {
-    "Prompt 1": "Response 1",
-    "Prompt 2": "Response 2",
-    "Prompt 3": "Response 3"
-  }
-}
+{"prompt": "Prompt 1", "response": "Response 1", "timestamp": "2024-08-09T21:36:36.733Z"}
+{"prompt": "Prompt 2", "response": "Response 2", "timestamp": "2024-08-09T21:36:39.906Z"}
+{"prompt": "Prompt 3", "response": "Response 3", "timestamp": "2024-08-09T21:36:42.123Z"}
 ```
 
 ### Install Dependencies
@@ -133,7 +169,7 @@ pnpm predeploy
 
 ### GitHub Actions
 
-Pre-configured with GitHub Actions to run your tests and lint your code automatically on every push. You can find the workflow configuration in the `.github/workflows` directory. Also, includes setup for dependabot to keep your dependencies up-to-date. Please note that, you may need to enable dependabot in your repository settings. Learn more about [Dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide).
+Pre-configured with GitHub Actions to run your tests and lint your code automatically on every push. You can find the workflow configuration in the `.github/workflows` directory. Also, includes setup for dependabot to keep dependencies up-to-date. Learn more about [Dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide).
 
 ## TypeScript Project Starter Template
 
