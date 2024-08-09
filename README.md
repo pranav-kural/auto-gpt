@@ -1,6 +1,6 @@
 # Auto GPT
 
-Automated use of GPT from OpenAI API through prompts presents in a file.
+Automated use of GPT from OpenAI API through prompts present in a file.
 
 Takes in prompts from input JSON file and outputs the response to output JSON lines file.
 
