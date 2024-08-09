@@ -1,0 +1,50 @@
+# Documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    commit-message:
+      prefix: 'Dependency Updates'
+    ignore:
+      # For Eslint, ignore all Dependabot updates for version 9 until supported by peer dependencies (typescript-eslint)
+      - dependency-name: 'eslint'
+        versions: ['9.x']
+    groups:
+      # group dev dependencies together in a single pull request
+      dev-dependencies:
+        applies-to: version-updates
+        patterns:
+          - '@eslint*'
+          - '@swc*'
+          - '@types*'
+          - 'eslint*'
+          - 'jest'
+          - 'nodemon'
+          - 'prettier'
+          - 'ts-*'
+          - 'tsx'
+          - 'typescript*'
+      dev-dependencies-security-updates:
+        applies-to: security-updates
+        patterns:
+          - '@eslint*'
+          - '@swc*'
+          - '@types*'
+          - 'eslint*'
+          - 'jest'
+          - 'nodemon'
+          - 'prettier'
+          - 'ts-*'
+          - 'tsx'
+          - 'typescript*'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    commit-message:
+      prefix: 'GitHub Actions Updates'
