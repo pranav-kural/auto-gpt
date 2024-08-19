@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@langchain/community':
         specifier: ^0.2.25
-        version: 0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8))
+        version: 0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))
       '@langchain/core':
         specifier: ^0.2.22
-        version: 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+        version: 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       '@langchain/langgraph':
         specifier: ^0.0.33
         version: 0.0.33(langchain@0.2.14)(openai@4.55.4(zod@3.23.8))
       '@langchain/openai':
         specifier: ^0.2.6
-        version: 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))
+        version: 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -70,8 +70,8 @@ importers:
         specifier: ^5.5.4
         version: 5.5.4
       typescript-eslint:
-        specifier: ^8.0.1
-        version: 8.0.1(eslint@8.57.0)(typescript@5.5.4)
+        specifier: ^8.1.0
+        version: 8.1.0(eslint@8.57.0)(typescript@5.5.4)
 
 packages:
 
@@ -1126,8 +1126,8 @@ packages:
   '@types/yargs@17.0.32':
     resolution: {integrity: sha512-xQ67Yc/laOG5uMfX/093MRlGGCIBzZMarVa+gfNKJxWAIgykYpVGkBdbqEzGDDfCrVUj6Hiff4mTZ5BA6TmAog==}
 
-  '@typescript-eslint/eslint-plugin@8.0.1':
-    resolution: {integrity: sha512-5g3Y7GDFsJAnY4Yhvk8sZtFfV6YNF2caLzjrRPUBzewjPCaj0yokePB4LJSobyCzGMzjZZYFbwuzbfDHlimXbQ==}
+  '@typescript-eslint/eslint-plugin@8.1.0':
+    resolution: {integrity: sha512-LlNBaHFCEBPHyD4pZXb35mzjGkuGKXU5eeCA1SxvHfiRES0E82dOounfVpL4DCqYvJEKab0bZIA0gCRpdLKkCw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       '@typescript-eslint/parser': ^8.0.0 || ^8.0.0-alpha.0
@@ -1137,8 +1137,8 @@ packages:
       typescript:
         optional: true
 
-  '@typescript-eslint/parser@8.0.1':
-    resolution: {integrity: sha512-5IgYJ9EO/12pOUwiBKFkpU7rS3IU21mtXzB81TNwq2xEybcmAZrE9qwDtsb5uQd9aVO9o0fdabFyAmKveXyujg==}
+  '@typescript-eslint/parser@8.1.0':
+    resolution: {integrity: sha512-U7iTAtGgJk6DPX9wIWPPOlt1gO57097G06gIcl0N0EEnNw8RGD62c+2/DiP/zL7KrkqnnqF7gtFGR7YgzPllTA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
@@ -1147,25 +1147,12 @@ packages:
       typescript:
         optional: true
 
-  '@typescript-eslint/scope-manager@8.0.1':
-    resolution: {integrity: sha512-NpixInP5dm7uukMiRyiHjRKkom5RIFA4dfiHvalanD2cF0CLUuQqxfg8PtEUo9yqJI2bBhF+pcSafqnG3UBnRQ==}
+  '@typescript-eslint/scope-manager@8.1.0':
+    resolution: {integrity: sha512-DsuOZQji687sQUjm4N6c9xABJa7fjvfIdjqpSIIVOgaENf2jFXiM9hIBZOL3hb6DHK9Nvd2d7zZnoMLf9e0OtQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@typescript-eslint/type-utils@8.0.1':
-    resolution: {integrity: sha512-+/UT25MWvXeDX9YaHv1IS6KI1fiuTto43WprE7pgSMswHbn1Jm9GEM4Txp+X74ifOWV8emu2AWcbLhpJAvD5Ng==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
-  '@typescript-eslint/types@8.0.1':
-    resolution: {integrity: sha512-PpqTVT3yCA/bIgJ12czBuE3iBlM3g4inRSC5J0QOdQFAn07TYrYEQBBKgXH1lQpglup+Zy6c1fxuwTk4MTNKIw==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@typescript-eslint/typescript-estree@8.0.1':
-    resolution: {integrity: sha512-8V9hriRvZQXPWU3bbiUV4Epo7EvgM6RTs+sUmxp5G//dBGy402S7Fx0W0QkB2fb4obCF8SInoUzvTYtc3bkb5w==}
+  '@typescript-eslint/type-utils@8.1.0':
+    resolution: {integrity: sha512-oLYvTxljVvsMnldfl6jIKxTaU7ok7km0KDrwOt1RHYu6nxlhN3TIx8k5Q52L6wR33nOwDgM7VwW1fT1qMNfFIA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '*'
@@ -1173,14 +1160,27 @@ packages:
       typescript:
         optional: true
 
-  '@typescript-eslint/utils@8.0.1':
-    resolution: {integrity: sha512-CBFR0G0sCt0+fzfnKaciu9IBsKvEKYwN9UZ+eeogK1fYHg4Qxk1yf/wLQkLXlq8wbU2dFlgAesxt8Gi76E8RTA==}
+  '@typescript-eslint/types@8.1.0':
+    resolution: {integrity: sha512-q2/Bxa0gMOu/2/AKALI0tCKbG2zppccnRIRCW6BaaTlRVaPKft4oVYPp7WOPpcnsgbr0qROAVCVKCvIQ0tbWog==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/typescript-estree@8.1.0':
+    resolution: {integrity: sha512-NTHhmufocEkMiAord/g++gWKb0Fr34e9AExBRdqgWdVBaKoei2dIyYKD9Q0jBnvfbEA5zaf8plUFMUH6kQ0vGg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@typescript-eslint/utils@8.1.0':
+    resolution: {integrity: sha512-ypRueFNKTIFwqPeJBfeIpxZ895PQhNyH4YID6js0UoBImWYoSjBsahUn9KMiJXh94uOjVBgHD9AmkyPsPnFwJA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
-  '@typescript-eslint/visitor-keys@8.0.1':
-    resolution: {integrity: sha512-W5E+o0UfUcK5EgchLZsyVWqARmsM7v54/qEq6PY3YI5arkgmCzHiuk0zKSJJbm71V0xdRna4BGomkCTXz2/LkQ==}
+  '@typescript-eslint/visitor-keys@8.1.0':
+    resolution: {integrity: sha512-ba0lNI19awqZ5ZNKh6wCModMwoZs457StTebQ0q1NP58zSi2F6MOZRXwfKZy+jB78JNJ/WH8GSh2IQNzXX8Nag==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@ungap/structured-clone@1.2.0':
@@ -1837,6 +1837,10 @@ packages:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
 
+  ignore@5.3.2:
+    resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
+    engines: {node: '>= 4'}
+
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -2399,6 +2403,9 @@ packages:
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
   mustache@4.2.0:
     resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
     hasBin: true
@@ -2930,8 +2937,8 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
-  typescript-eslint@8.0.1:
-    resolution: {integrity: sha512-V3Y+MdfhawxEjE16dWpb7/IOgeXnLwAEEkS7v8oDqNcR1oYlqWhGH/iHqHdKVdpWme1VPZ0SoywXAkCqawj2eQ==}
+  typescript-eslint@8.1.0:
+    resolution: {integrity: sha512-prB2U3jXPJLpo1iVLN338Lvolh6OrcCZO+9Yv6AR+tvegPPptYCDBIHiEEUdqRi8gAv2bXNKfMUrgAd2ejn/ow==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '*'
@@ -3577,23 +3584,23 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8))':
+  '@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))':
     dependencies:
-      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
-      '@langchain/openai': 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))
+      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      '@langchain/openai': 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
       binary-extensions: 2.3.0
       expr-eval: 2.0.2
       flat: 5.0.2
       js-yaml: 4.1.0
-      langchain: 0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8))
-      langsmith: 0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      langchain: 0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))
+      langsmith: 0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       uuid: 10.0.0
       zod: 3.23.8
       zod-to-json-schema: 3.23.2(zod@3.23.8)
     optionalDependencies:
       '@langchain/langgraph': 0.0.33(langchain@0.2.14)(openai@4.55.4(zod@3.23.8))
       duck-duck-scrape: 2.2.5
-      ignore: 5.3.1
+      ignore: 5.3.2
     transitivePeerDependencies:
       - '@gomomento/sdk-web'
       - '@langchain/anthropic'
@@ -3612,13 +3619,13 @@ snapshots:
       - peggy
       - pyodide
 
-  '@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))':
+  '@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      langsmith: 0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
@@ -3631,16 +3638,16 @@ snapshots:
 
   '@langchain/langgraph@0.0.33(langchain@0.2.14)(openai@4.55.4(zod@3.23.8))':
     dependencies:
-      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       uuid: 10.0.0
       zod: 3.23.8
     transitivePeerDependencies:
       - langchain
       - openai
 
-  '@langchain/openai@0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))':
+  '@langchain/openai@0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))':
     dependencies:
-      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       js-tiktoken: 1.0.12
       openai: 4.55.4(zod@3.23.8)
       zod: 3.23.8
@@ -3649,9 +3656,9 @@ snapshots:
       - encoding
       - langchain
 
-  '@langchain/textsplitters@0.0.3(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))':
+  '@langchain/textsplitters@0.0.3(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))':
     dependencies:
-      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       js-tiktoken: 1.0.12
     transitivePeerDependencies:
       - langchain
@@ -3876,17 +3883,17 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@typescript-eslint/eslint-plugin@8.0.1(@typescript-eslint/parser@8.0.1(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)':
     dependencies:
       '@eslint-community/regexpp': 4.11.0
-      '@typescript-eslint/parser': 8.0.1(eslint@8.57.0)(typescript@5.5.4)
-      '@typescript-eslint/scope-manager': 8.0.1
-      '@typescript-eslint/type-utils': 8.0.1(eslint@8.57.0)(typescript@5.5.4)
-      '@typescript-eslint/utils': 8.0.1(eslint@8.57.0)(typescript@5.5.4)
-      '@typescript-eslint/visitor-keys': 8.0.1
+      '@typescript-eslint/parser': 8.1.0(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/scope-manager': 8.1.0
+      '@typescript-eslint/type-utils': 8.1.0(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/utils': 8.1.0(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/visitor-keys': 8.1.0
       eslint: 8.57.0
       graphemer: 1.4.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       natural-compare: 1.4.0
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
@@ -3894,12 +3901,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.0.1(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/parser@8.1.0(eslint@8.57.0)(typescript@5.5.4)':
     dependencies:
-      '@typescript-eslint/scope-manager': 8.0.1
-      '@typescript-eslint/types': 8.0.1
-      '@typescript-eslint/typescript-estree': 8.0.1(typescript@5.5.4)
-      '@typescript-eslint/visitor-keys': 8.0.1
+      '@typescript-eslint/scope-manager': 8.1.0
+      '@typescript-eslint/types': 8.1.0
+      '@typescript-eslint/typescript-estree': 8.1.0(typescript@5.5.4)
+      '@typescript-eslint/visitor-keys': 8.1.0
       debug: 4.3.6
       eslint: 8.57.0
     optionalDependencies:
@@ -3907,15 +3914,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/scope-manager@8.0.1':
+  '@typescript-eslint/scope-manager@8.1.0':
     dependencies:
-      '@typescript-eslint/types': 8.0.1
-      '@typescript-eslint/visitor-keys': 8.0.1
+      '@typescript-eslint/types': 8.1.0
+      '@typescript-eslint/visitor-keys': 8.1.0
 
-  '@typescript-eslint/type-utils@8.0.1(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/type-utils@8.1.0(eslint@8.57.0)(typescript@5.5.4)':
     dependencies:
-      '@typescript-eslint/typescript-estree': 8.0.1(typescript@5.5.4)
-      '@typescript-eslint/utils': 8.0.1(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/typescript-estree': 8.1.0(typescript@5.5.4)
+      '@typescript-eslint/utils': 8.1.0(eslint@8.57.0)(typescript@5.5.4)
       debug: 4.3.6
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
@@ -3924,12 +3931,12 @@ snapshots:
       - eslint
       - supports-color
 
-  '@typescript-eslint/types@8.0.1': {}
+  '@typescript-eslint/types@8.1.0': {}
 
-  '@typescript-eslint/typescript-estree@8.0.1(typescript@5.5.4)':
+  '@typescript-eslint/typescript-estree@8.1.0(typescript@5.5.4)':
     dependencies:
-      '@typescript-eslint/types': 8.0.1
-      '@typescript-eslint/visitor-keys': 8.0.1
+      '@typescript-eslint/types': 8.1.0
+      '@typescript-eslint/visitor-keys': 8.1.0
       debug: 4.3.6
       globby: 11.1.0
       is-glob: 4.0.3
@@ -3941,20 +3948,20 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.0.1(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/utils@8.1.0(eslint@8.57.0)(typescript@5.5.4)':
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
-      '@typescript-eslint/scope-manager': 8.0.1
-      '@typescript-eslint/types': 8.0.1
-      '@typescript-eslint/typescript-estree': 8.0.1(typescript@5.5.4)
+      '@typescript-eslint/scope-manager': 8.1.0
+      '@typescript-eslint/types': 8.1.0
+      '@typescript-eslint/typescript-estree': 8.1.0(typescript@5.5.4)
       eslint: 8.57.0
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  '@typescript-eslint/visitor-keys@8.0.1':
+  '@typescript-eslint/visitor-keys@8.1.0':
     dependencies:
-      '@typescript-eslint/types': 8.0.1
+      '@typescript-eslint/types': 8.1.0
       eslint-visitor-keys: 3.4.3
 
   '@ungap/structured-clone@1.2.0': {}
@@ -4610,7 +4617,7 @@ snapshots:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.3.2
-      ignore: 5.3.1
+      ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -4655,7 +4662,7 @@ snapshots:
 
   humanize-ms@1.2.1:
     dependencies:
-      ms: 2.1.2
+      ms: 2.1.3
 
   iconv-lite@0.6.3:
     dependencies:
@@ -4666,6 +4673,8 @@ snapshots:
   ignore-by-default@1.0.1: {}
 
   ignore@5.3.1: {}
+
+  ignore@5.3.2: {}
 
   import-fresh@3.3.0:
     dependencies:
@@ -5110,16 +5119,16 @@ snapshots:
 
   kleur@3.0.3: {}
 
-  langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)):
+  langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)):
     dependencies:
-      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
-      '@langchain/openai': 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))
-      '@langchain/textsplitters': 0.0.3(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      '@langchain/openai': 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
+      '@langchain/textsplitters': 0.0.3(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       binary-extensions: 2.3.0
       js-tiktoken: 1.0.12
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
-      langsmith: 0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      langsmith: 0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       openapi-types: 12.1.3
       p-retry: 4.6.2
       uuid: 10.0.0
@@ -5127,13 +5136,13 @@ snapshots:
       zod: 3.23.8
       zod-to-json-schema: 3.23.2(zod@3.23.8)
     optionalDependencies:
-      '@langchain/community': 0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8))
-      ignore: 5.3.1
+      '@langchain/community': 0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))
+      ignore: 5.3.2
     transitivePeerDependencies:
       - encoding
       - openai
 
-  langsmith@0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)):
+  langsmith@0.1.41(@langchain/core@0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)):
     dependencies:
       '@types/uuid': 9.0.8
       commander: 10.0.1
@@ -5142,8 +5151,8 @@ snapshots:
       semver: 7.6.3
       uuid: 9.0.1
     optionalDependencies:
-      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
-      langchain: 0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.1)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.1)(openai@4.55.4(zod@3.23.8))
+      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      langchain: 0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))
       openai: 4.55.4(zod@3.23.8)
 
   leven@3.1.0: {}
@@ -5222,6 +5231,8 @@ snapshots:
       brace-expansion: 2.0.1
 
   ms@2.1.2: {}
+
+  ms@2.1.3: {}
 
   mustache@4.2.0: {}
 
@@ -5679,11 +5690,11 @@ snapshots:
 
   type-fest@0.21.3: {}
 
-  typescript-eslint@8.0.1(eslint@8.57.0)(typescript@5.5.4):
+  typescript-eslint@8.1.0(eslint@8.57.0)(typescript@5.5.4):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.0.1(@typescript-eslint/parser@8.0.1(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
-      '@typescript-eslint/parser': 8.0.1(eslint@8.57.0)(typescript@5.5.4)
-      '@typescript-eslint/utils': 8.0.1(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/eslint-plugin': 8.1.0(@typescript-eslint/parser@8.1.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/parser': 8.1.0(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/utils': 8.1.0(eslint@8.57.0)(typescript@5.5.4)
     optionalDependencies:
       typescript: 5.5.4
     transitivePeerDependencies:
