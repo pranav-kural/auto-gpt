@@ -18,8 +18,8 @@ importers:
         specifier: ^0.0.33
         version: 0.0.33(langchain@0.2.14)(openai@4.55.4(zod@3.23.8))
       '@langchain/openai':
-        specifier: ^0.2.6
-        version: 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
+        specifier: ^0.2.8
+        version: 0.2.8(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -894,6 +894,10 @@ packages:
     resolution: {integrity: sha512-mElDcRSIbZ8uCvavPBpfFBuMRhiPKGMfLXkz+AmYp9rXNH4eGFZJ0Ghn33lYQcwzulzXHfhXxMs63g63UDcUaQ==}
     engines: {node: '>=18'}
 
+  '@langchain/core@0.2.31':
+    resolution: {integrity: sha512-qGfeaACST7dvovgHItzuag9fEBGK7IjCE9vRuTu/y8/WYGJi28WPD/AwWxnu7YdW1vZSuIXO6ZA76t2G9B/oKg==}
+    engines: {node: '>=18'}
+
   '@langchain/langgraph@0.0.33':
     resolution: {integrity: sha512-OCL/eGdIERmcKP7UgNoLyFM1nbA5VvBb7Pu85t1gE/jMMmmcJghvdVzx61YUaPs2seNpU9sVTHUKNTcAjD3Ctw==}
     engines: {node: '>=18'}
@@ -903,8 +907,8 @@ packages:
       better-sqlite3:
         optional: true
 
-  '@langchain/openai@0.2.6':
-    resolution: {integrity: sha512-LZgSzHOZPJGsZr2ZXJICqZo1GN0kUyP9/RN+T45g7HDdMRfS5Df7fJgY9w7EIfznT83Q0Ywhz+At/UvWMR3xhw==}
+  '@langchain/openai@0.2.8':
+    resolution: {integrity: sha512-p5fxEAKuR8UV9jWIxkZ6AY/vAPSYxJI0Pf/UM4T3FKk/dn99G/mAEDLhfI4pBf7B8o8TudSVyBW2hRjZqlQu7g==}
     engines: {node: '>=18'}
 
   '@langchain/textsplitters@0.0.3':
@@ -1116,6 +1120,9 @@ packages:
 
   '@types/stack-utils@2.0.3':
     resolution: {integrity: sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==}
+
+  '@types/uuid@10.0.0':
+    resolution: {integrity: sha512-7gqG38EyHgyP1S+7+xomFtL+ZNHcKv6DwNaCZmJmo1vgMugyF3TCnXVg4t1uk89mLNwnLtnY3TpOpCOyp1/xHQ==}
 
   '@types/uuid@9.0.8':
     resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
@@ -2313,6 +2320,20 @@ packages:
       openai:
         optional: true
 
+  langsmith@0.1.49:
+    resolution: {integrity: sha512-PI9qzBalZYpN2gu1kf1IX/+unRRXTiZRhtTKYfWcPyQVPZ5exZVJfZy515+FUp1iXdgacr2tS2ZtNGUB2Vdejg==}
+    peerDependencies:
+      '@langchain/core': '*'
+      langchain: '*'
+      openai: '*'
+    peerDependenciesMeta:
+      '@langchain/core':
+        optional: true
+      langchain:
+        optional: true
+      openai:
+        optional: true
+
   leven@3.1.0:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
     engines: {node: '>=6'}
@@ -3445,7 +3466,7 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.10
+      '@types/node': 22.5.0
       jest-mock: 29.7.0
 
   '@jest/expect-utils@29.7.0':
@@ -3463,7 +3484,7 @@ snapshots:
     dependencies:
       '@jest/types': 29.6.3
       '@sinonjs/fake-timers': 10.3.0
-      '@types/node': 20.14.10
+      '@types/node': 22.5.0
       jest-message-util: 29.7.0
       jest-mock: 29.7.0
       jest-util: 29.7.0
@@ -3584,7 +3605,7 @@ snapshots:
   '@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))':
     dependencies:
       '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
-      '@langchain/openai': 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
+      '@langchain/openai': 0.2.8(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
       binary-extensions: 2.3.0
       expr-eval: 2.0.2
       flat: 5.0.2
@@ -3633,6 +3654,23 @@ snapshots:
       - langchain
       - openai
 
+  '@langchain/core@0.2.31(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))':
+    dependencies:
+      ansi-styles: 5.2.0
+      camelcase: 6.3.0
+      decamelize: 1.2.0
+      js-tiktoken: 1.0.12
+      langsmith: 0.1.49(@langchain/core@0.2.31(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      mustache: 4.2.0
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      uuid: 10.0.0
+      zod: 3.23.8
+      zod-to-json-schema: 3.23.2(zod@3.23.8)
+    transitivePeerDependencies:
+      - langchain
+      - openai
+
   '@langchain/langgraph@0.0.33(langchain@0.2.14)(openai@4.55.4(zod@3.23.8))':
     dependencies:
       '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
@@ -3642,9 +3680,9 @@ snapshots:
       - langchain
       - openai
 
-  '@langchain/openai@0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))':
+  '@langchain/openai@0.2.8(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))':
     dependencies:
-      '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      '@langchain/core': 0.2.31(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       js-tiktoken: 1.0.12
       openai: 4.55.4(zod@3.23.8)
       zod: 3.23.8
@@ -3822,7 +3860,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 20.14.10
+      '@types/node': 22.5.0
 
   '@types/http-cache-semantics@4.0.4': {}
 
@@ -3849,7 +3887,7 @@ snapshots:
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 18.19.44
+      '@types/node': 22.5.0
       form-data: 4.0.0
 
   '@types/node@18.19.44':
@@ -3871,6 +3909,8 @@ snapshots:
   '@types/retry@0.12.0': {}
 
   '@types/stack-utils@2.0.3': {}
+
+  '@types/uuid@10.0.0': {}
 
   '@types/uuid@9.0.8': {}
 
@@ -4784,7 +4824,7 @@ snapshots:
       '@jest/expect': 29.7.0
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.10
+      '@types/node': 22.5.0
       chalk: 4.1.2
       co: 4.6.0
       dedent: 1.5.3
@@ -4878,7 +4918,7 @@ snapshots:
       '@jest/environment': 29.7.0
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.14.10
+      '@types/node': 22.5.0
       jest-mock: 29.7.0
       jest-util: 29.7.0
 
@@ -4927,7 +4967,7 @@ snapshots:
   jest-mock@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.14.10
+      '@types/node': 22.5.0
       jest-util: 29.7.0
 
   jest-pnp-resolver@1.2.3(jest-resolve@29.7.0):
@@ -5064,7 +5104,7 @@ snapshots:
 
   jest-worker@29.7.0:
     dependencies:
-      '@types/node': 20.14.10
+      '@types/node': 22.5.0
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
@@ -5119,7 +5159,7 @@ snapshots:
   langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)):
     dependencies:
       '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
-      '@langchain/openai': 0.2.6(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
+      '@langchain/openai': 0.2.8(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))
       '@langchain/textsplitters': 0.0.3(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       binary-extensions: 2.3.0
       js-tiktoken: 1.0.12
@@ -5149,6 +5189,19 @@ snapshots:
       uuid: 9.0.1
     optionalDependencies:
       '@langchain/core': 0.2.22(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
+      langchain: 0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))
+      openai: 4.55.4(zod@3.23.8)
+
+  langsmith@0.1.49(@langchain/core@0.2.31(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)))(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8)):
+    dependencies:
+      '@types/uuid': 10.0.0
+      commander: 10.0.1
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      semver: 7.6.3
+      uuid: 10.0.0
+    optionalDependencies:
+      '@langchain/core': 0.2.31(langchain@0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(openai@4.55.4(zod@3.23.8))
       langchain: 0.2.14(@langchain/community@0.2.25(@langchain/langgraph@0.0.33)(duck-duck-scrape@2.2.5)(ignore@5.3.2)(openai@4.55.4(zod@3.23.8)))(ignore@5.3.2)(openai@4.55.4(zod@3.23.8))
       openai: 4.55.4(zod@3.23.8)
 
