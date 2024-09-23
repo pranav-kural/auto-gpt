@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@langchain/community": "^0.2.25",
-    "@langchain/core": "^0.2.22",
+    "@langchain/core": "^0.3.3",
     "@langchain/langgraph": "^0.0.33",
     "@langchain/openai": "^0.2.6",
     "dotenv": "^16.4.5",
